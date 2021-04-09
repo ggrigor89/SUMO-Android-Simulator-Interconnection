@@ -1,4 +1,4 @@
-# SUMO_Android_Simulator_interconnection
+# SUMO Android Simulator interconnection
 Repository with all elements to facilitate an interconnection between a SUMO simulation and an Android Application
 
 Programming languages: Python, Kotlin
@@ -17,4 +17,4 @@ All parties exchange information using .json packages. Packages are exchanged ov
 
 The following image presents the interconnection among all elements in the example of a bicycle simulator, where SUMO is used for modelling surrounding traffic.
 
-!(/Interconnection_graph.png?raw=true "Title")
+(/Interconnection_graph.png?raw=true "Title")
