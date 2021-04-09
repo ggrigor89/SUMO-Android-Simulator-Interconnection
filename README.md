@@ -17,4 +17,4 @@ All parties exchange information using .json packages. Packages are exchanged ov
 
 The following image presents the interconnection among all elements in the example of a bicycle simulator, where SUMO is used for modelling surrounding traffic.
 
-(./SUMO_Android_Simulator_interconnection/Interconnection_graph.png?raw=true "Title")
+https://github.com/ggrigor89/SUMO_Android_Simulator_interconnection/blob/main/Interconnection_graph.png
