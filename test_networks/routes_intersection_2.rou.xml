@@ -1,0 +1,53 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+<vTypes>
+<vTypeDistribution id="bicycle_dist" vTypes="bicycle_3 bicycle_4 bicycle_5 bicycle_6 bicycle_7"/>
+<vTypeDistribution id="bicycle_distRight" vTypes="bicycleR_3 bicycleR_4 bicycleR_5 bicycleR_6 bicycleR_7"/>        
+<vTypeDistribution id="bicycleMi_dist" vTypes="bicycleMi_3 bicycleMi_4 bicycleMi_5 bicycleMi_6 bicycleMi_7"/>
+</vTypes>
+
+
+
+<route id="WN" edges="WE1 WE2 SN2"/>  
+    <flow id="WN_truck" type="truckbox" route="WN" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="1.0" color="0,255,0"/>
+    <flow id="WN_passenger" type="passengerbox" route="WN" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="99.0" color="0,255,0"/>
+    <flow id="WN_bicycle" type="bicycle_dist" departLane="2" route="WN" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="246" color="0,255,0"/>
+
+
+<route id="WS" edges="WE1 WE2 NS2"/>  
+    <flow id="WS_truck" type="truck" route="WS" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="0.5" color="255,51,255"/>
+    <flow id="WS_passenger" type="passenger" route="WS" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="349.5" color="255,51,255"/>
+
+
+<route id="WE" edges="WE1 WE2 WE3"/>  
+    <flow id="WE_truck" type="truck" route="WE" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="12.5" color="102,255,178"/>
+    <flow id="WE_passenger" type="passenger" route="WE" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="237.5" color="102,255,178"/>
+    <flow id="WE_bicycle" type="bicycle_dist" route="WE" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="618" color="102,255,178"/>
+
+
+<route id="EN" edges="EW1 EW2 SN2"/>  
+    <flow id="EN_truck" type="truck" route="EN" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="0.5" color="200,0,0"/>
+    <flow id="EN_passenger" type="passenger" route="EN" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="349.5" color="200,0,0"/>
+
+
+<route id="ES" edges="EW1 EW2 NS2"/>  
+    <flow id="ES_truck" type="truckbox" route="ES" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="1.0" color="200,200,0"/>
+    <flow id="ES_passenger" type="passengerbox" route="ES" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="99.0" color="200,200,0"/>
+    <flow id="ES_bicycle" type="bicycle_dist" departLane="2" route="ES" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="246" color="200,200,0"/>
+
+
+<route id="EW" edges="EW1 EW2 EW3"/>  
+    <flow id="EW_truck" type="truck" route="EW" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="12.5" color="200,200,200"/>
+    <flow id="EW_passenger" type="passenger" route="EW" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="237.5" color="200,200,200"/>
+    <flow id="EW_bicycle" type="bicycle_dist" route="EW" begin="0" end="1000" arrivalSpeed="current" departSpeed="max" vehsPerHour="618" color="200,200,200"/>
+
+
+
+
+
+
+
+
+
+
+
+</routes>

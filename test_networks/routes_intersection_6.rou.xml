@@ -1,0 +1,28 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+<vTypes>
+<vTypeDistribution id="bicycle_dist" vTypes="bicycle_3 bicycle_4 bicycle_5 bicycle_6 bicycle_7"/>
+<vTypeDistribution id="bicycleMi_dist" vTypes="bicycleMi_3 bicycleMi_4 bicycleMi_5 bicycleMi_6 bicycleMi_7"/>
+</vTypes>
+
+<route id="EW" edges="EW1 EW2 EW3 EW4"/>  
+    <flow id="EW_passenger" type="passenger" route="EW" begin="0" end="1000"  departLane="best" arrivalSpeed="current" vehsPerHour="665.0" color="152,251,152"/>
+    <flow id="EW_truck" type="truck" route="EW" begin="0" end="1000"  departLane="best" arrivalSpeed="current" vehsPerHour="35.0" color="152,251,152"/>
+    <flow id="EW_bicycle" type="bicycle_dist" route="EW" begin="0" end="1000"  departLane="best" arrivalSpeed="current" vehsPerHour="579" color="152,251,152"/>
+
+<route id="EN" edges="EW1 EW2 EW3 SN4"/>  
+    <flow id="EN_passenger" type="passengerR" route="EN" begin="0" end="1000"  departLane="best" arrivalSpeed="current" vehsPerHour="198.0" color="152,251,152"/>
+    <flow id="EN_truck" type="truckR" route="EN" begin="0" end="1000"  departLane="best" arrivalSpeed="current" vehsPerHour="2.0" color="152,251,152"/>
+
+
+<route id="WE" edges="WE1 WE2 WE3 WE4"/>  
+    <flow id="WE_passenger" type="passenger" route="WE" begin="0" end="1000"  departLane="best" arrivalSpeed="current" vehsPerHour="665.0" color="245,245,245"/>
+    <flow id="WE_truck" type="truck" route="WE" begin="0" end="1000"  departLane="best" arrivalSpeed="current" vehsPerHour="35.0" color="245,245,245"/>
+    <flow id="WE_bicycle" type="bicycle_dist" route="WE" begin="0" end="1000"  departLane="best" arrivalSpeed="current" vehsPerHour="579" color="245,245,245"/>
+
+<route id="WS" edges="WE1 WE2 WE3 NS4"/>  
+    <flow id="WS_passenger" type="passengerR" route="WS" begin="0" end="1000"  departLane="best" arrivalSpeed="current" vehsPerHour="198.0" color="245,245,245"/>
+    <flow id="WS_truck" type="truckR" route="WS" begin="0" end="1000"  departLane="best" arrivalSpeed="current" vehsPerHour="2.0" color="245,245,245"/>
+     
+
+
+</routes>

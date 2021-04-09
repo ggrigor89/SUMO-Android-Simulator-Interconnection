@@ -1,0 +1,39 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+<vTypes>
+<vTypeDistribution id="bicycle_dist" vTypes="bicycle_3 bicycle_4 bicycle_5 bicycle_6 bicycle_7"/>        
+<vTypeDistribution id="bicycleR_dist" vTypes="bicycleR_3 bicycleR_4 bicycleR_5 bicycleR_6 bicycleR_7"/>
+<vTypeDistribution id="bicycleMiL_dist" vTypes="bicycleMiL_3 bicycleMiL_4 bicycleMiL_5 bicycleMiL_6 bicycleMiL_7"/>
+<vTypeDistribution id="bicycleMi_dist" vTypes="bicycleMi_3 bicycleMi_4 bicycleMi_5 bicycleMi_6 bicycleMi_7"/>
+</vTypes>
+
+<route id="NE" edges="NS1 NS2 WE4"/>  
+    <flow id="NE_passenger" type="passengerMi" route="NE" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="19.8" color="0,0,1"/>
+    <flow id="NE_truck" type="truckMi" route="NE" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="0.2" color="0,0,1"/>  
+    <flow id="NE_bicycle" type="bicycleMiL_dist" route="NE" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="245" color="0,0,1"/>  
+
+<route id="NW" edges="NS1 NS2 EW4"/>  
+    <flow id="NW_passenger" type="passengerMi" route="NW" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="49.5" color="0,1,1"/>
+    <flow id="NW_truck" type="truckMi" route="NW" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="0.5" color="0,1,1"/>  
+
+<route id="NS" edges="NS1 NS2 NS3"/>  
+    <flow id="NS_passenger" type="passengerMi" route="NS" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="49.5" color="1,1,1"/>
+    <flow id="NS_truck" type="truckMi" route="NS" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="0.5" color="1,1,1"/>
+    <flow id="NS_bicycle" type="bicycleMi" route="NS" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="1114" color="1,1,1"/>
+
+<route id="SE" edges="SN1 SN2 WE4"/>  
+    <flow id="SE_passenger" type="passengerMi" route="SE" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="49.5" color="1,0,0"/>
+    <flow id="SE_truck" type="truckMi" route="SE" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="0.5" color="1,0,0"/>  
+
+<route id="SW" edges="SN1 SN2 EW4"/>  
+    <flow id="SW_passenger" type="passengerMi" route="SW" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="19.8" color="1,1,0"/>
+    <flow id="SW_truck" type="truckMi" route="SW" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="0.2" color="1,1,0"/>  
+    <flow id="SW_bicycle" type="bicycleMiL_dist" route="SW" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="245" color="1,1,0"/>  
+
+<route id="SN" edges="SN1 SN2 SN3"/>  
+    <flow id="SN_passenger" type="passengerMi" route="SN" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="49.5" color="0.5,0,0"/>
+    <flow id="SN_truck" type="truckMi" route="SN" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="0.5" color="0.5,0,0"/>
+    <flow id="SN_bicycle" type="bicycleMi" route="SN" begin="0" end="1000" arrivalSpeed="current" vehsPerHour="1114" color="0.5,0,0"/>
+
+
+
+</routes>
