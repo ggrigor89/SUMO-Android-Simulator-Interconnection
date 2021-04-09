@@ -15,3 +15,6 @@ https://www.vpn.net/
 
 All parties exchange information using .json packages. Packages are exchanged over TCP/IP Sockets.
 
+The following image presents the interconnection among all elements in the example of a bicycle simulator, where SUMO is used for modelling surrounding traffic.
+
+!(/Interconnection_graph.png?raw=true "Title")
