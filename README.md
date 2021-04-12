@@ -19,3 +19,5 @@ The following image presents the interconnection among all elements in the examp
 
 
 ![alt text](https://github.com/ggrigor89/SUMO_Android_Simulator_interconnection/blob/main/Interconnection_graph.png?raw=true)
+
+The Android App can be built and installed on android devices using Android Studio
